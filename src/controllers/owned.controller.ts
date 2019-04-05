@@ -22,7 +22,7 @@ export class OwnedController<T extends Document, C extends any, U extends any> {
 
   @Put(":id")
   @Role()
-  async update(@Param("id") id: string, @Body() data: C, @User("id") createdBy: string) {
+  async update(@Param("id") id: string, @Body() data: U, @User("id") createdBy: string) {
     try {
       return await this.service.update({ _id: id, createdBy: createdBy }, data);
     } catch (e) {
