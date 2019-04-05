@@ -1,0 +1,39 @@
+{
+  "name": "@nestrx/restful",
+  "version": "0.0.1",
+  "description": "Restful is an NestJs module predefined form of inheritance structure for API when working with Mongoose",
+  "author": "zinzinday@gmail.com",
+  "repository": "https://github.com/nestrx/restful.git",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf lib && tsc -p tsconfig.json",
+    "prepublish:npm": "npm run build",
+    "publish:npm": "npm publish --access public",
+    "prepublish:next": "npm run build",
+    "publish:next": "npm publish --access public --tag next"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^6.0.0",
+    "@nestjs/core": "^6.0.0",
+    "@nestjs/mongoose": "^6.0.0",
+    "class-transformer": "^0.2.0",
+    "reflect-metadata": "^0.1.13",
+    "mongoose": "^5.4.22",
+    "typeorm": "^0.2.16",
+    "rxjs": "^6.4.0",
+    "rxjs-compat": "^6.4.0",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.4.1",
+    "prettier": "^1.16.4",
+    "@types/node": "^8.10.45",
+    "@types/mongoose": "^5.3.24",
+    "@nestrx/access-control": "^0.0.2",
+    "@nestrx/aes-gcm": "^0.0.3"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^6.0.0",
+    "@nestjs/core": "^6.0.0",
+    "class-transformer": "^0.2.0",
+    "@nestrx/access-control": "^0.0.1"
+  }
+}

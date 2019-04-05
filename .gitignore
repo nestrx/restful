@@ -1,0 +1,7 @@
+.idea/
+.vscode
+lib/
+node_modules/
+package-lock.json
+.npmignore
+tsconfig.json
