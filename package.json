@@ -1,6 +1,6 @@
 {
   "name": "@nestrx/restful",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Restful is an NestJs module predefined form of inheritance structure for API when working with Mongoose",
   "author": "zinzinday@gmail.com",
   "repository": "https://github.com/nestrx/restful.git",
