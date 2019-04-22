@@ -5,6 +5,33 @@ import { AllExceptionFilter, PipeDto, TransformInterceptor } from './common';
 @Global()
 @Module({})
 export class RestfulModule {
+  static forPipe(): DynamicModule {
+    return {
+      module: RestfulModule,
+      providers: [
+        { provide: APP_PIPE, useClass: PipeDto }
+      ]
+    };
+  }
+
+  static forFilter(): DynamicModule {
+    return {
+      module: RestfulModule,
+      providers: [
+        { provide: APP_FILTER, useClass: AllExceptionFilter }
+      ]
+    };
+  }
+
+  static forInterceptor(): DynamicModule {
+    return {
+      module: RestfulModule,
+      providers: [
+        { provide: APP_INTERCEPTOR, useClass: TransformInterceptor }
+      ]
+    };
+  }
+
   static forRoot(): DynamicModule {
     return {
       module: RestfulModule,

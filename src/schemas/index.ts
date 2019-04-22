@@ -1,1 +1,1 @@
-export * from './docment.schema'
+export * from './base.schema'

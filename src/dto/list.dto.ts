@@ -1,4 +1,4 @@
-import { Transform } from "class-transformer";
+import { Transform } from 'class-transformer';
 
 export class ListDto {
   @Transform(value => value || {}) filter: any = {};

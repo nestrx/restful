@@ -37,7 +37,7 @@ export class BaseController<T extends Document, C extends any, U extends any> {
   @Get()
   async list(@Query() query: ListDto) {
     try {
-      return await this.service.remove(query);
+      return await this.service.list(query);
     } catch (e) {
       throw e;
     }
